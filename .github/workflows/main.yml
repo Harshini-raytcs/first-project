@@ -22,4 +22,4 @@ jobs:
 
     - name: Create S3 Bucket
       run: |
-        aws s3api create-bucket --bucket sample-github --region ${{ secrets.AWS_REGION }} --create-bucket-configuration LocationConstraint=${{ secrets.AWS_REGION }}
+        aws s3api create-bucket --bucket sample-github --us-east-1 ${{ secrets.AWS_REGION }} --create-bucket-configuration LocationConstraint=${{ secrets.AWS_REGION }}
