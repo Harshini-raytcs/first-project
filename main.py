@@ -15,4 +15,4 @@ def create_bucket(bucket_name, region=None):
         print(f"Error creating bucket: {e}")
 
 if _name_ == "_main_":
-    create_bucket("your-new-bucket-name", "us-east-1")
+    create_bucket("sample_github", "us-east-1")
